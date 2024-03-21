@@ -47,6 +47,7 @@ public class theFirstAndLastPosition {
                 left = mid;
             }
         }
+        //此时返回left或者right都可以，因为此时两数相等
         if (nums[left] == target) {
             return left;
         }
