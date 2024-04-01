@@ -19,7 +19,7 @@ public class PeaksOfMountainArrays {
 //while (left <= right): 这种形式用于闭区间 [left, right]。在这种情况下，当 left 和 right 相遇时，
 // 搜索的区间仍然有效，因此需要继续测试这个单一的元素是否是我们寻找的答案。这种方式常用于普通的二分查找，
 // 例如在有序数组中查找一个特定值
-        while (left < right) {
+        while (left <= right) {
             int mid = left + (right - left) / 2;
             if (arr[mid] > arr[mid + 1]) {
                 ans = mid;
